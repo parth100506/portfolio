@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parth Sugandhi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --secondary: #2d3436;
+      --accent: #00cec9;
+      --background: #f8f9fa;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--secondary);
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    .hero-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-left img {
+      width: 320px;
+      height: 320px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: white;
+      padding: 10px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+      margin: 1rem;
+    }
+
+    .hero-right {
+      max-width: 500px;
+      margin: 1rem;
+    }
+
+    .hero-right h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .typing {
+      font-size: 1.5rem;
+      font-weight: 300;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      width: 0;
+      animation: typing 4s steps(40, end) infinite alternate, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    nav {
+      background: var(--secondary);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .skill-item img {
+      width: 48px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-item span {
+      font-weight: 500;
+      display: block;
+    }
+
+    .certificate-list {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+
+    .certificate-list li {
+      margin: 1rem 0;
+    }
+
+    .certificate-list a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .certificate-list a:hover {
+      color: var(--accent);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: auto;
+    }
+
+    form button:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        flex-direction: column;
+      }
+      .hero-left img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero-left">
+    <img src="https://i.ibb.co/KzqTDvyn/Profile-Photo.jpg" alt="Parth Sugandhi">
+  </div>
+  <div class="hero-right">
+    <h1>Parth Sugandhi</h1>
+    <div class="typing">Creative Tech Enthusiast 🚀</div>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="card" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>Hello! I'm Parth Sugandhi, a passionate IT student at MITAOE. I blend creativity with technology to work on impactful projects and continue upgrading my development skills!</p>
+</section>
+
+<section id="projects" class="card" data-aos="fade-up">
+  <h2>Projects</h2>
+  <h3>🌋 Volcanic Eruption Model</h3>
+  <p>Created a volcano model simulating chemical eruptions. Won First Prize at school Science Exhibition.</p>
+  <h3>🌐 Earthquake Detector</h3>
+  <p>Designed a simple earthquake detector using sensors. Runner-up in 8th grade exhibition.</p>
+  <h3>🧠 PCM & Bio Foundation Exam</h3>
+  <p>Ranked 5th across Udgir and received ₹9,000 scholarship under Dr. APJ Abdul Kalam's initiative.</p>
+</section>
+
+<section id="skills" class="card" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><span>Python</span></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"/><span>C Programming</span></div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/oracle-logo.png"/><span>Oracle</span></div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/tableau-software.png"/><span>Tableau</span></div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/database.png"/><span>MySQL</span></div>
+    <div class="skill-item"><img src="https://img.icons8.com/color/48/orange.png"/><span>Orange Data Mining</span></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><span>HTML5</span></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><span>CSS3</span></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><span>JavaScript</span></div>
+  </div>
+</section>
+
+<section id="certificates" class="card" data-aos="fade-up">
+  <h2>Certificates</h2>
+  <ul class="certificate-list">
+    <li><a href="https://drive.google.com/uc?id=1JYX1qODAl7mYYqw4kLHDrXuSWcc59kX6" target="_blank">Python Essentials 1 Certificate</a></li>
+    <li><a href="https://drive.google.com/uc?id=1szNxvy7OfF489F8VoyLUF56_GtHnCKHq" target="_blank">Python Essentials 2 Certificate</a></li>
+    <li><a href="https://drive.google.com/uc?id=127O5us1fTQhY8u56k61FoqKX8RztrU04" target="_blank">NASSCOM Certification</a></li>
+  </ul>
+</section>
+
+<section id="contact" class="card" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Parth Sugandhi | All Rights Reserved
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200 });
+</script>
+
+</body>
+</html>
